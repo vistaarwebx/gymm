@@ -13,4 +13,6 @@ urlpatterns = [
     path('contact',CONTACT,name= 'contact'),
     path('gallery',GALLERY,name= 'gallery'),
     path('pricing',PRICING,name= 'pricing'),
+    path('courses',COURSES,name= 'courses'),
+    path('blog',BLOG,name= 'blog'),
 ]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

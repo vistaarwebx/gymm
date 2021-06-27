@@ -27,3 +27,9 @@ def GALLERY(request):
 def PRICING(request):
     return render(request, 'frontend/pricing.html')
 
+def COURSES(request):
+    return render(request, 'frontend/courses.html')
+
+def BLOG(request):
+    return render(request, 'frontend/blog.html')
+

@@ -14,3 +14,16 @@ from django.contrib.auth.models import User
 
 def Home(request):
     return render(request, 'frontend/index.html')
+
+def ABOUT(request):
+    return render(request, 'frontend/about.html')
+
+def CONTACT(request):
+    return render(request, 'frontend/contact.html')
+
+def GALLERY(request):
+    return render(request, 'frontend/gallery.html')
+
+def PRICING(request):
+    return render(request, 'frontend/pricing.html')
+

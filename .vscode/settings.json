@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "env/bin/python3.9"
+    "python.pythonPath": "C:\\Users\\Tejendra\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "git.ignoreLimitWarning": true
 }

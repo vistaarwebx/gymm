@@ -19,16 +19,17 @@ def ABOUT(request):
     return render(request, 'frontend/about.html')
 
 def CONTACT(request):
+    
     return render(request, 'frontend/contact.html')
 
 def GALLERY(request):
     return render(request, 'frontend/gallery.html')
 
-def PRICING(request):
-    return render(request, 'frontend/pricing.html')
+def PRODUCT(request):
+    return render(request, 'frontend/product.html')
 
-def COURSES(request):
-    return render(request, 'frontend/courses.html')
+def SERVICES(request):
+    return render(request, 'frontend/services.html')
 
 def BLOG(request):
     return render(request, 'frontend/blog.html')

@@ -31,13 +31,16 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'zmain',
+    'djrichtextfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -67,6 +70,19 @@ TEMPLATES = [
         },
     },
 ]
+
+
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': True,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat | align | styles ',
+        'width': 900,
+        'height': 900
+    }
+}
 
 WSGI_APPLICATION = 'gymm.wsgi.application'
 
@@ -132,7 +148,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "robertejendrapatel@gmail.com"
+EMAIL_HOST_USER = "info.prospectias@gmail.com"
 EMAIL_HOST_PASSWORD = "Tejendra@123"
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
